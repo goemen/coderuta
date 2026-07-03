@@ -25,7 +25,7 @@ EXERCISES = {
         "id": "data_types",
         "title": "🌟 Data Types",
         "intro": "Data types are the different kinds of information you can use in programming. This lesson teaches you about numbers, text, and other data types in Python.",
-        "concept": "In Python, there are several data types, including integers (whole numbers), floats (decimal numbers), strings (text), and booleans (True/False).",
+        "concept": "In Python, there are several data types, including integers (whole numbers), floats (decimal numbers), strings (text), and booleans (True/False).\n 1) Integers: Whole numbers, e.g., 1, 2, 3\n 2) Floats: Decimal numbers, e.g., 1.5, 2.75\n 3) Strings: Text enclosed in quotes, e.g., 'Hello'\n 4) Booleans: True or False values.",
         "goal": "Identify and use different data types in Python.",
         "instructions": "Create variables of different data types and display them.",
         "hint": "Use the assignment operator (=) to create a variable. For example: age = 10\nshow(age)\nname = 'Alice'\nshow(name)",
@@ -165,7 +165,7 @@ EXERCISES = {
         "goal": "Create a simple Rock Paper Scissors game in Python.",
         "instructions": "Create a program that allows the user to play Rock Paper Scissors against the computer. The program should display the user's choice, the computer's choice, and the result of the game.",
         "hint": "Use random.choice() to generate the computer's choice. For example: import random\nchoices = ['rock', 'paper', 'scissors']\ncomputer_choice = random.choice(choices)",
-        "starter_code": "# Create a simple Rock Paper Scissors game in Python.\n\nimport random\n\nchoices = ['rock', 'paper', 'scissors']\nuser_choice = ask('Choose rock, paper, or scissors: ')\ncomputer_choice = random.choice(choices)\n\nprint(f'You chose {user_choice}.')\nprint(f'Computer chose {computer_choice}.')",
+        "starter_code": "# Create a simple Rock Paper Scissors game in Python.\n\nimport random\n\nchoices = ['rock', 'paper', 'scissors']\nuser_choice = ask('Choose rock, paper, or scissors: ')\ncomputer_choice = random.choice(choices)\n\nprint(f'You chose {user_choice}.')\nprint(f'Computer chose {computer_choice}.')\n\n # Complete the game logic to determine the winner\nif user_choice == computer_choice:\n    result = 'It\'s a tie!'\nelif (user_choice == 'rock' and computer_choice == 'scissors') or \\\n     (user_choice == 'paper' and computer_choice == 'rock') or \\\n     (user_choice == 'scissors' and computer_choice == 'paper'):\n    result = 'You win!'\nelse:\n    result = 'You lose!'\n\nshow(result)",
         "validation": {"type": "contains", "value": "import random"},
         "reward": {
             "stars": 10,

@@ -328,7 +328,6 @@ def render_exercise(exercise: dict, editor_theme: str = "vs"):
 
                 validation_result = result.get("validation_result", {})
                 if validation_result.get("passed"):
-                    st.balloons()
                     st.success(f"🎉 {validation_result['message']}")
                     reward = exercise.get("reward", {})
                     if reward.get("badge"):
