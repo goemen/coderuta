@@ -1,0 +1,1 @@
+I need to create a python learning plan for my kid. He is 10 years old. He is new to coding. I am a programmer and need a plan, 1 hour daily lessons. Made with fun activities, visualization, goal oriented, exercises.
